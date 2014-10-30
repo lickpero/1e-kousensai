@@ -1,0 +1,60 @@
+body {
+  background-color: #111111;
+  color: #ffffff;
+  padding-top: 20px;
+  font-size: 15px;
+  z-index: 100;
+  /* 背景の円形グラデ */
+  background: -moz-radial-gradient(orange, black);
+  background: -webkit-gradient(radial, center center, 80, center center, 400, from(orange), to(black));
+}
+
+.container {
+  text-align: center;
+}
+  .container h1 {
+    margin-bottom: 10px;
+  }
+  #title {
+    color: #ffffff;
+  }
+  .container h3 {
+    margin-bottom: 30px;
+  }
+  .container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+  }
+  .container ol li {
+    font-size: 14px;
+  }
+  .container button {
+    margin-bottom: 20px;
+  }
+
+p:not(#first-line) {
+  margin-bottom: 20px;
+}
+
+/* fontawesome */
+i {
+  font-size: 1.3em;
+  color: inherit;
+}
+
+.footer {
+  margin-top: 60px;
+  bottom: 0px;
+  background-color: #ff9100;
+  width: 100%;
+}
+  .footer p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+audio {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
