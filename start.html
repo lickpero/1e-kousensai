@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/font-awesome.css"> <!-- オサレなアイコン -->
   <link rel="stylesheet" href="css/ossan.css"> <!-- アニメーション化 -->
   <link rel="stylesheet" href="css/style.css"> <!-- 自分で定義したやつ -->
+  <link rel="stylesheet" href="css/variables.scss"> <!-- 自分で定義したやつ -->
 
 <!-- スクリプト（JS） -->
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>
@@ -22,26 +23,32 @@
   <div class="container"> <!-- コンテンツをcontainerという大きな箱でくくるイメージ -->
     <img src="img/top.jpg" width="280" height="350" alt="UMA">
     <hr>
-    <p id="first-line">デンキィ・ジョーンズの世界へ、</p>
-    <a href="room0.html"> <!-- リンク先は変更してください -->
-      <button type="button" class="btn btn-warning btn-lg">いざ！</button>
-    </a>
+
     <p>君たちはデンキィ・ジョーンズ。ここはUMAの迷Q。</p>
     <p>君たちはQを解き明かし、財宝を手に入れることができるか！？</p>
 
-    <h2>☆遊び方☆</h2>
+    <h2><i class="fa fa-star"></i> 遊び方 <i class="fa fa-star"></i></h2>
+  </div>
       <ol>
         <li>Q（問題）をQRコードで読み込む</li>
         <li>答えを選択して、指定された道へ進む</li>
         <li>数々のQを解き、UMAに出会え！</li>
         <li>財宝が手に入るかも？</li>
       </ol>
+      <br>
+
+  <div class="container">
+    <p id="first-line">デンキィ・ジョーンズの世界へ、</p>
+    <a href="room0.html"> <!-- リンク先は変更してください -->
+      <button type="button" class="btn btn-warning btn-lg btn-block"><i class="fa fa-key"></i>
+ いざ！</button>
+    </a>
+    <p><i class="fa fa-exclamation-circle"></i> このゲームで遊ぶには、<br>QRコードリーダーが必要です。</p>
   </div>
 
   <!-- 一番下のやつ -->
   <div class="footer">
-    <p style="display:inline;">produced by 1</p>
-    <p style="display:inline;" onclick="pero()">E</p>
+    <p>produced by 1<span onclick="pero()">E</span></p>
     <p>Copyright © 2014 1e All Rights Reserved.</p>
   </div>
 

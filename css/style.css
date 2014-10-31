@@ -1,12 +1,12 @@
 body {
   background-color: #111111;
-  color: #ffffff;
+  color: #FFF9E8;
   padding-top: 20px;
   font-size: 15px;
   z-index: 100;
   /* 背景の円形グラデ */
   background: -moz-radial-gradient(orange, black);
-  background: -webkit-gradient(radial, center center, 80, center center, 400, from(orange), to(black));
+  background: -webkit-gradient(radial, center center, 20, center center, 400, from(orange), to(black));
 }
 
 .container {
@@ -16,7 +16,7 @@ body {
     margin-bottom: 10px;
   }
   #title {
-    color: #ffffff;
+    color: #FFF9E8;
   }
   .container h3 {
     margin-bottom: 30px;
@@ -24,7 +24,7 @@ body {
   .container img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
   .container ol li {
     font-size: 14px;
@@ -32,8 +32,11 @@ body {
   .container button {
     margin-bottom: 20px;
   }
+  .container a {
+    text-decoration: none;
+  }
 
-p:not(#first-line) {
+p:not(#first-line, .footer) {
   margin-bottom: 20px;
 }
 
@@ -43,15 +46,22 @@ i {
   color: inherit;
 }
 
-.footer {
-  margin-top: 60px;
-  bottom: 0px;
+.btn-warning {
   background-color: #ff9100;
+  border-color: #ff9933;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  margin-top: 30px;
   width: 100%;
+  background-color: #ff9100;
 }
   .footer p {
     font-size: 15px;
     text-align: center;
+    margin: 0px;
   }
 
 audio {
