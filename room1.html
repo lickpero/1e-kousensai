@@ -40,6 +40,7 @@
           case 3: a =9 +Math.floor( Math.random()*2); break;
           case 4: a = Math.floor( Math.random()*11); break;
         } 
+        document.getElementById("start").innerHTML=
         document.getElementById("ti").innerHTML=ti[a];
         document.getElementById("na").innerHTML=na[a];
         document.getElementById("s1").innerHTML=s1[a];
@@ -48,11 +49,13 @@
         document.getElementById("le").innerHTML="難易度:"+le[a];
       }
     </script>
-    <h1 id="ti"onclick="pero()">難易度を選択してください。</h1>
-    <p id="na">難易度えらんでください。</p>
-    <p id="le">難易度：</p>
-    <p id="s1"type="button" class="btn btn-lg btn-primary btn-block btn-warning"onClick=replyclick1()>1</button><br>
-    <p id="s2"type="button" class="btn btn-lg btn-default btn-block btn-warning"onClick=replyclick()>2</button>
+    <h1 id="ti"onclick="pero()">↑難易度を選択してください。↑</h1>
+    <p id="na"></p>
+    <p id="le"></p>
+    <div id="start">
+    <button id="s1"type="button" class="btn btn-lg btn-primary btn-block btn-warning"onClick=replyclick1()></button><br>
+    <button id="s2"type="button" class="btn btn-lg btn-default btn-block btn-warning"onClick=replyclick()></button>
+    </div>
 <script type="text/javascript">
 function replyclick1(){
   if(co[a]==1)
