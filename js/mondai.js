@@ -147,7 +147,6 @@ var co = new Array(
   "2"                            // No.20
 );
 
-
 function test(){
   a=0;
   switch (document.selbox.level.selectedIndex){
