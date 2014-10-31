@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/font-awesome.css"> <!-- オサレなアイコン -->
   <link rel="stylesheet" href="css/ossan.css"> <!-- アニメーション化 -->
   <link rel="stylesheet" href="css/style.css"> <!-- 自分で定義したやつ -->
+  <link rel="stylesheet" href="css/variables.scss"> <!-- 自分で定義したやつ -->
 
 <!-- スクリプト（JS） -->
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>
@@ -17,31 +18,36 @@
 
   <title>DENKI-JONES</title>
 </head>
+<body>
 
-  <body>
+<body>
+  <div class="container">
+    <h1 id="title" class="bigEntrance">Congratulations!</h1>
+    <h1 id="title" class="slideDown" onClick="play();">全問正解 <i class="fa fa-angellist"></i></h1>
+    <img src="img/uma.png" alt="UMA">
     <div class="container">
-      <h1 id="title" class="bigEntrance">Congratulations!</h1>
-      <h1 id="title" class="slideDown" onClick="play();">全問正解<br>＼(^o^)／</h1>
-
-<!-- 音声を再生する -->
-      <audio controls="controls" id="JonesSound" preload="auto" class="slideDown">
-        <source src="msc/jones.mp3" type="audio/mp3">
-        <source src="msc/jones.ogg" type="audio/ogg">
-        <source src="msc/jones.wav" type="audio/wav">
-        <p>お使いのブラウザはでは再生できません。</p>
-      </audio>
-      <p>※再生ボタンで音声が鳴ります。</p>
-      <p>ご注意ください。</p>
-
-      <h3>ご来場<br>ありがとうございました！</h3>
+      <div class="arrow_box">
+        <p>全く、ゲストにしては上出来だ。<p>
+      </div>
     </div>
 
-<!-- 一番下のやつ -->
-    <div class="footer">
-      <p style="display:inline;">produced by 1</p>
-      <p style="display:inline;" onclick="pero()">E</p>
-      <p>Copyright © 2014 1e All Rights Reserved.</p>
-    </div>
+  <!-- 音声を再生する -->
+    <audio controls="controls" id="JonesSound" preload="auto" class="slideDown">
+      <source src="msc/jones.mp3" type="audio/mp3">
+      <source src="msc/jones.ogg" type="audio/ogg">
+      <source src="msc/jones.wav" type="audio/wav">
+      <p>お使いのブラウザはでは再生できません。</p>
+    </audio>
+    <p>※再生ボタンで音声が鳴ります。</p>
+    <p>ご注意ください。</p>
+  </div>
 
-  </body>
+
+  <!-- 一番下のやつ -->
+  <div class="footer">
+    <p>produced by 1<span onclick="pero()">E</span></p>
+    <p>Copyright © 2014 1e All Rights Reserved.</p>
+  </div>
+
+</body>
 </html>
