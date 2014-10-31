@@ -20,30 +20,12 @@
 </head>
 <body>
 
-  <div class="container"> <!-- コンテンツをcontainerという大きな箱でくくるイメージ -->
-    <h1 class="expandOpen">ようこそ！</h1> <!-- classにこれを指定することでアニメーション化できる -->
-    <h1 class="expandOpen">DENKI-JONESの<br>世界へ！</h1>
-    <form name="selbox">
-      <div class="form-group has-warning">
-        <select name="level" class="form-control" onchange="test()">
-          <option>難易度を選んでください</option>
-          <option>★</option>
-          <option>★★</option>
-          <option>★★★</option>
-          <option>all</option>
-        </select>
-      </div>
-    </form>
-
-    <h3 id="ti" onclick="pero()"></h3> <!-- タイトルを表示 -->
-    <p id="na"></p> <!-- 問題を表示 -->
-
-    <button id="s1" type="button" class="btn btn-lg btn-block btn-warning" onClick="replyclick1()">選択肢1</button>
-    <br>
-    <button id="s2" type="button" class="btn btn-lg btn-block btn-warning" onClick="replyclick()">選択肢2</button>
+  <div class='container slideUp'>
+    <h1>さあ、<br>準備は整った！</h1>
+    <div class="pulse"><h3>この先で何が君を<br>待ち受けるのか</h3></div>
   </div>
 
-  <!-- 一番下のやつ -->
+<!-- 一番下のやつ -->
   <div class="footer">
     <p>produced by 1<span onclick="pero()">E</span></p>
     <p>Copyright © 2014 1e All Rights Reserved.</p>
