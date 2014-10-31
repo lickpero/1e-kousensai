@@ -7,7 +7,7 @@ function test(){
     case 2: a = 3 +Math.floor( Math.random()*9);  break;
     case 3: a = 9 +Math.floor( Math.random()*2);  break;
     case 4: a = Math.floor( Math.random()*20);    break;
-    // `random()*11`の11は問題数
+    // `random()*20`の20は問題数
   }
 
   document.getElementById("ti").innerHTML=ti[a];
