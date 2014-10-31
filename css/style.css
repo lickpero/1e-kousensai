@@ -29,6 +29,9 @@ div #main {
 #title {
   color: #FFF9E8;
 }
+#dummy {
+  padding-top: 100px;
+}
 .container h3 {
   margin-bottom: 30px;
 }
